@@ -188,35 +188,35 @@ function main {
             show_docker_compose_services_status
             ;;
         "up")
-            echo "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
+            echo -e "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
             up_docker_compose_services && \
             show_docker_compose_project_status && \
             show_docker_compose_services_status
             ;;
         "restart")
-            echo "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
+            echo -e "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
             restart_docker_compose_services && \
             show_docker_compose_project_status && \
             show_docker_compose_services_status
             ;;
         "stop")
-            echo "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
+            echo -e "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
             stop_docker_compose_services && \
             show_docker_compose_project_status && \
             show_docker_compose_services_status
             ;;
         "delete")
-            echo "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
+            echo -e "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
             delete_docker_compose_services_images && \
             show_docker_compose_project_status && \
             show_docker_compose_services_status
             ;;
         "logs")
-            echo "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
+            echo -e "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
             show_docker_compose_project_logs
             ;;
         "status")
-            echo "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
+            echo -e "Realizando acción '${DOCKER_COMPOSER_ACTION}' con el parámetro '${PROJECT_PROFILE}'"
             show_docker_compose_project_status && \
             show_docker_compose_services_status
             ;;
